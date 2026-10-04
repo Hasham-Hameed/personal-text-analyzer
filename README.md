@@ -51,3 +51,7 @@ Planned improvements:
 ## Author
 
 Built while learning Python fundamentals: string methods and string immutability.
+
+## Regards
+
+Hasham Hameed
