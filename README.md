@@ -1,57 +1,64 @@
-# Personal Text Analyzer
+# String Toolkit Analyzer
 
-A Python script that takes a sentence as input and demonstrates common string methods, including string immutability in Python.
+A Python script that takes a sentence and runs it through almost every common string method — case conversion, cleaning, searching, counting, and checking.
 
 ## What it does
 
-- Takes a sentence as input
-- Converts it to uppercase and lowercase
-- Finds its length
-- Extracts the first character, last character, and first three characters
-- Replaces the word "Python" with "programming" using `.replace()`
-- Prints the original sentence again afterward to demonstrate that the replace did NOT change the original string, since strings are immutable in Python
+- Converts the sentence to uppercase, lowercase, capitalized, and title case
+- Strips leading/trailing whitespace
+- Counts characters, words, and occurrences of the letter "a"
+- Finds the first and last character
+- Finds the position of the word "Python" in the sentence
+- Checks if the sentence starts with "Hello" and ends with "."
+- Checks if the cleaned sentence is alphanumeric
+- Replaces "Python" with "programming"
 
 ## How to run
 
 ```bash
-python text_analyzer.py
+python string_toolkit_analyzer.py
 ```
 
 You'll be prompted to enter a sentence.
 
 ## Example
 
-Using the sentence: `I am learning Python`
+Using the sentence: `Hello, I am learning Python.`
 
 ```
-======= Personal Text Analyzer =======
+====== Personal Text Analyzer ======
 
-Original: I am learning Python
-Uppercase: I AM LEARNING PYTHON
-Lowercase: i am learning python
-Length: 21
-First character: I
-Last character: n
-First three characters: I a
-Modified: I am learning programming
-Original after modification: I am learning Python
+Original: Hello, I am learning Python.
+Uppercase: HELLO, I AM LEARNING PYTHON.
+Lowercase: hello, i am learning python.
+Capitalized: Hello, i am learning python.
+Title: Hello, I Am Learning Python.
+Cleaned: Hello, I am learning Python.
+
+Characters: 29
+First character: H
+Last character: .
+
+Words: 5
+Number of a's: 2
+Position of Python: 21
+
+Starts with Hello: True
+Ends with .: True
+Only letters/numbers: False
+
+After replacement: Hello, I am learning programming.
 ```
-
-Notice the last two lines: `.replace()` returns a brand new string (`Modified`), while the original `sentence` variable stays untouched. This shows string immutability — strings can't be changed in place in Python.
 
 ## Status
 
-This is a small learning project exploring Python string methods.
+This is a small, growing learning project exploring Python string methods in depth. It's an expanded version of an earlier, simpler text analyzer.
 
 Planned improvements:
-- Handle sentences without the word "Python" gracefully (currently `.replace()` just does nothing if it's not found, which is fine, but could print a note)
-- Add word count and reversed sentence
-- Add input validation for empty input
+- Handle empty input gracefully
+- Let the user choose which word to search/replace instead of hardcoding "Python"
+- Add reversed sentence and vowel/consonant count
 
 ## Author
 
-Built while learning Python fundamentals: string methods and string immutability.
-
-## Regards
-
-Hasham Hameed
+Built while learning Python fundamentals: string methods, slicing, and boolean checks.

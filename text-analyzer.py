@@ -4,24 +4,51 @@ upper_sentence = sentence.upper()
 
 lower_sentence = sentence.lower()
 
-length_sentence = len(sentence)
+capitalize_sentence = sentence.capitalize()
 
-first_character = sentence[0]
+title_sentence = sentence.title()
 
-last_character = sentence[-1]
+cleaned_sentence = sentence.strip()
 
-first_three_characters = sentence[0:3]
+length = len(cleaned_sentence)
 
-new_sentence = sentence.replace("Python","programming")
+first_character = cleaned_sentence[0]
 
-print("======= Personal Text Analyzer =======")
+last_character = cleaned_sentence[-1]
+
+number_of_words = len(cleaned_sentence.split())
+
+a_count = cleaned_sentence.lower().count("a")
+
+python_position = sentence.find("Python")
+
+hello_start = sentence.startswith("Hello")
+
+dot_end = sentence.endswith(".")
+
+alnum_check = cleaned_sentence.isalnum()
+
+replaced_sentence = sentence.replace("Python","programming")
+
+print("====== Personal Text Analyzer ======")
 print(" ")
 print(f"Original: {sentence}")
 print(f"Uppercase: {upper_sentence}")
 print(f"Lowercase: {lower_sentence}")
-print(f"Length: {length_sentence}")
+print(f"Capitalized: {capitalize_sentence}")
+print(f"Title: {title_sentence}")
+print(f"Cleaned: {cleaned_sentence}")
+print(" ")
+print(f"Characters: {length}")
 print(f"First character: {first_character}")
 print(f"Last character: {last_character}")
-print(f"First three characters: {first_three_characters}")
-print(f"Modified: {new_sentence}")
-print(f"Original after modification: {sentence}")
+print(" ")
+print(f"Words: {number_of_words}")
+print(f"Number of a's: {a_count}")
+print(f"Position of Python: {python_position}")
+print(" ")
+print(f"Starts with Hello: {hello_start}")
+print(f"Ends with .: {dot_end}")
+print(f"Only letters/numbers: {alnum_check}")
+print(" ")
+print(f"After replacement: {replaced_sentence}")
