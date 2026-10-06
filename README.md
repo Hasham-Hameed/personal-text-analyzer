@@ -62,3 +62,7 @@ Planned improvements:
 ## Author
 
 Built while learning Python fundamentals: string methods, slicing, and boolean checks.
+
+## Regards
+
+Hasham Hameed
